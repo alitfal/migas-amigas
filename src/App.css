@@ -1,0 +1,300 @@
+/* Estilos generales */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para el header */
+.header {
+  color: #bf360c;
+  /* Cambia el color del texto del header */
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.header ul {
+  flex-basis: 75%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.header nav a {
+  color: #bf360c;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header nav a:hover {
+  color: lightblue;
+}
+
+/* Estilos para las tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Aplica los estilos solo a las tablas que no tienen la clase footer-table */
+table:not(.footer-table) td {
+  border-bottom: 1px solid #ddd;
+  /* Mantiene el borde inferior en las celdas de las otras tablas */
+}
+
+/* Estilos para las imágenes */
+img {
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}#00ff00
+
+.footer-table {
+  border-collapse: collapse;
+  /* Elimina el borde de la tabla del footer */
+  
+}
+
+.principal-background {
+  background-image: url("../public/images/pan_redondo_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  height: 600px;
+}
+
+.principal-background p {
+  width: 400px;
+  height: 200px;
+}
+
+/* Estilos específicos para el footer */
+.footer {
+  border: none;
+
+  height: 100px;
+  /* Altura fija del footer */
+  width: 100%;
+  /* Ancho completo */
+  background-color: #282c34;
+  /* Color de fondo del footer */
+  color: white;
+  /* Color del texto */
+  display: flex;
+  /* Utiliza flexbox */
+  justify-content: center;
+  /* Centra horizontalmente los elementos del footer */
+  align-items: center;
+  /* Centra verticalmente los elementos del footer */
+  position: fixed;
+  /* Posicionamiento fijo */
+  bottom: 0;
+  /* Se fija en la parte inferior */
+  left: 0;
+  /* Se alinea a la izquierda */
+}
+
+.footer a.email-link {
+  color:#00ff00;
+  /* Cambia el color del enlace del email a verde */
+}
+.footer-content span {
+  margin: 0 10px;
+}
+
+
+/* Estilos para la información de contacto */
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-info address {
+  flex: 1;
+}
+
+/* Estilos para la tabla de contacto */
+.contact-table {
+  width: 100%;
+  /* Ajusta el ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse;
+  /* Combina los bordes de las celdas de la tabla */
+}
+
+.contact-table td {
+  padding: 10px;
+  /* Agrega un relleno a las celdas de la tabla */
+}
+
+/* Estilos específicos para la imagen del croquis */
+.croquis img {
+  width: 900px;
+  /* Establece el ancho de la imagen del croquis */
+  height: 500px;
+  /* Establece la altura de la imagen del croquis */
+}
+.table-row:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Cambia el valor al color que desees */
+}
+/* Estilos para el formulario de contacto */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  /* Centra el formulario horizontalmente */
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #4caf50;
+}
+
+/* Estilos para el resto de la página */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.address-info p {
+  margin-bottom: 10px;
+}
+
+.map-info {
+  flex: 1;
+}
+
+.map-info img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query para ajustar estilos en dispositivos pequeños */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .address-info,
+  .map-info {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a.active {
+  color:#c70000; /* Cambia el color del texto cuando el enlace esté activo */
+}
+
+
+.language-select-container {
+  margin-right: 10px;
+}
+.logo h2 {
+  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* Estilos para el botón de enviar del formulario de contacto */
+.contact-submit-button {
+  color: #000 !important; /* Cambia el color del texto del botón a negro */
+  background-color: #4caf50; /* Mantener el color de fondo verde */
+}

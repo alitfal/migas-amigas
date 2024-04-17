@@ -1,0 +1,171 @@
+{
+  "translation": {
+    "welcomeMessage": "Bienvenido a Migas amigas",
+    "entryMessage": "Pasa y disfruta del buen hacer panadero",
+    "bodyMessage" : "Migas Amigas es una panadería que combina la nostalgia por lo tradicional con una creatividad audaz. En nuestro espacio acogedor, los clientes disfrutan de una variedad de panes recién horneados, desde clásicos hasta innovadores. Nuestro compromiso con la calidad y la frescura se refleja en cada bocado, invitando a los clientes a experimentar una experiencia única en cada visita.",
+
+    "languageSelection": "Idioma",
+    "homeButton": "Inicio",
+    "bakeryButton": "Panaderia",
+    "pieButton": "Empanadas",
+    "pastryButton": "Pasteleria / Bolleria",
+    "contactButton": "Contacto",
+
+    "bakeryProducts": "Productos de Panaderia",
+    "pieProducts": "Tipos de Empanada",
+    "pastryProducts": "Productos de Panaderia",
+
+    "titlePrincipal": "Pasión por lo tradicional",
+    "titleProduct": "Producto",
+    "titleIngredients": "Ingredientes",
+    "titleDescription": "Descripcion",
+    "titleImage": "Imagen",
+
+    "titleHeader": "Cabecera y barra de navegacion",
+    "titleFooter": "Pie de página",
+    "titleBody": "Esta es la página inicio",
+    "titleBodyError": "ERROR 404 PAGINA NO ENCONTRADA",
+    "titleBodyPasBollo": "Esta es la página de pastelería y bollería",
+    "titleBodyPan": "Esta es la página de panadería",
+    "titleBodyEmpanada": "Esta es la página de empanadas",
+    "titleBodyContacto": "Contacta con nosotros, estamos a tu disposición.",
+
+    "formName": "Nombre",
+    "formEmail": "Correo Electrónico",
+    "formMsg": "Mensaje",
+    "formSubmit": "Enviar",
+    "formNamePlaceholder": "Ingrese su nombre",
+    "formEmailPlaceholder": "Ingrese su correo electrónico",
+    "formMsgPlaceholder": "Escriba su mensaje aquí",
+
+    "email": "Email",
+    "phone": "Teléfono Fijo",
+    "mobile": "Teléfono Movil",
+    "hours": "Horario"
+  },
+
+  "productNamesPanaderia": {
+    "baguette": "Baguette",
+    "panDeMolde": "De Molde",
+    "ciabatta": "Ciabatta",
+    "panDeCenteno": "Centeno",
+    "panMasaMadre": "Masa Madre",
+    "brioche": "Brioche",
+    "panIntegral": "Integral",
+    "panAjo": "De Ajo",
+    "panMaiz": "De Maiz",
+    "panEspelta": "De Espelta"
+  },
+
+  "productAltNamesPanaderia": {
+    "baguette": "Pan Baguette",
+    "panDeMolde": "Pan de Molde",
+    "ciabatta": "Pan Ciabatta",
+    "panDeCenteno": "Pan de Centeno",
+    "panMasaMadre": "Pan de Masa Madre",
+    "brioche": "Pan Brioche",
+    "panIntegral": "Pan Integral",
+    "panAjo": "Pan de Ajo",
+    "panMaiz": "Pan de Maiz",
+    "panEspelta": "Pan de Espelta"
+  },
+
+  "productIngredientsPanaderia": {
+    "baguette": "Harina, agua, levadura, sal.",
+    "panDeMolde": "Harina, agua, levadura, sal, azúcar, leche.",
+    "ciabatta": "Harina, agua, levadura, sal, aceite de oliva.",
+    "panDeCenteno": "Harina de centeno, agua, levadura, sal.",
+    "panMasaMadre": "Harina, agua, masa madre, sal.",
+    "brioche": "Harina, huevos, mantequilla, azúcar, levadura, sal.",
+    "panIntegral": "Harina integral, agua, levadura, sal, aceite.",
+    "panAjo": "Harina, agua, levadura, sal, ajo, mantequilla.",
+    "panMaiz": "Harina de maíz, agua, levadura, sal, azúcar.",
+    "panEspelta": "Harina, agua, levadura, sal, espelta, aceite de oliva."
+  },
+
+  "productDescriptionsPanaderia": {
+    "baguette": "Pan francés tradicional y crujiente.",
+    "panDeMolde": "Pan suave y tierno ideal para sándwiches.",
+    "ciabatta": "Pan italiano rústico con corteza crujiente y miga alveolada.",
+    "panDeCenteno": "Pan oscuro y sabroso hecho con harina de centeno.",
+    "panMasaMadre": "Pan fermentado naturalmente, con un sabor único y profundo.",
+    "brioche": "Pan dulce y mantecoso, perfecto para desayunos y postres.",
+    "panIntegral": "Pan saludable hecho con harina integral, rico en fibra.",
+    "panAjo": "Pan aromatizado con ajo y mantequilla, ideal para acompañar platos.",
+    "panMaiz": "Pan amarillo y dulce hecho con harina de maíz.",
+    "panEspelta": "Pan elaborado con harina de espelta, suave y nutritivo."
+  },
+
+  "productNamesEmpanada": {
+    "empanadaGallega": "Gallega",
+    "empanadaArgentina": "Argentina",
+    "empanadaEspaniola": "Española",
+    "empanadaPollo": "De Pollo"
+  },
+
+  "productAltNamesEmpanada": {
+    "empanadaGallega": "Empanada Gallega",
+    "empanadaArgentina": "Empanada Argentina",
+    "empanadaEspaniola": "Empanada Española",
+    "empanadaPollo": "Empanada de Pollo"
+  },
+
+  "productIngredientsEmpanada": {
+    "empanadaGallega": "Masa, carne de ternera, cebolla, pimiento, tomate, huevo duro",
+    "empanadaArgentina": "Masa, carne de vacuno, cebolla, pimiento, huevo duro, aceitunas",
+    "empanadaEspaniola": "Masa, atún, cebolla, tomate, huevo duro",
+    "empanadaPollo": "Masa, pollo, cebolla, pimiento, tomate, huevo duro"
+  },
+
+  "productDescriptionsEmpanada": {
+    "empanadaGallega": "Empanada rellena de atún, mejillones, pimientos y aceitunas.",
+    "empanadaArgentina": "Empanada rellena de carne picada, huevo duro y condimentos.",
+    "empanadaEspaniola": "Empanada rellena de chorizo, pimientos, cebolla y tomate.",
+    "empanadaPollo": "Empanada rellena de pollo, cebolla, pimientos y aceitunas."
+  },
+
+  "productNamesBolleria": {
+    "croissant": "Croissant",
+    "napolitanaChocolate": "Napolitana de chocolate",
+    "donut": "Donut",
+    "muffin": "Munffin",
+    "ensaimada": "Ensaimada",
+    "palmeraHojaldre": "Palmera de Hojaldre",
+    "trenzaChocolate": "Trenza de Chocolate",
+    "berlinesas": "Berlinesas"
+  },
+
+  "productAltNamesBolleria": {
+    "croissant": "Bolleria Croissant",
+    "napolitanaChocolate": "Bolleria Napolitana de chocolate",
+    "donut": "Bolleria Donut",
+    "muffin": "Bolleria Muffin",
+    "ensaimada": "Bolleria Ensaimada",
+    "palmeraHojaldre": "Bolleria Palmera de Hojaldre",
+    "trenzaChocolate": "Bolleria Trenza de Chocolate",
+    "berlinesas": "Bolleria Berlinesas"
+  },
+
+  "productIngredientsBolleria": {
+    "croissant": "Harina, mantequilla, agua, levadura, azúcar, sal, huevo.",
+    "napolitanaChocolate": "Masa de hojaldre, chocolate.",
+    "donut": "Harina, azúcar, leche, huevos, levadura, mantequilla.",
+    "muffin": "Harina, azúcar, leche, huevos, mantequilla, levadura, ingredientes para saborizar (frutas, chocolate, etc.).",
+    "ensaimada": "Harina, azúcar, agua, levadura, huevos, manteca de cerdo.",
+    "palmeraHojaldre": "Masa de hojaldre, azúcar.",
+    "trenzaChocolate": "Masa de hojaldre, chocolate.",
+    "berlinesas": "Harina, azúcar, levadura, leche, huevos, mantequilla."
+  },
+
+  "productDescriptionsBolleria": {
+    "croissant": "Pastel de hojaldre en forma de media luna.",
+    "napolitanaChocolate": "Hoja de hojaldre rellena de chocolate.",
+    "donut": "Rosquilla dulce y esponjosa, con agujero en el centro.",
+    "muffin": "Pastelito individual de masa esponjosa, generalmente con trozos de frutas o chocolate.",
+    "ensaimada": "Especialidad de Mallorca, masa dulce y espiralada, espolvoreada con azúcar en polvo.",
+    "palmeraHojaldre": "Pastel de hojaldre en forma de palma.",
+    "trenzaChocolate": "Trenza de hojaldre rellena de chocolate.",
+    "berlinesas": "Bollos dulces rellenos de crema o mermelada."
+  }
+
+}
