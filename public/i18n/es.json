@@ -10,6 +10,7 @@
     "pieButton": "Empanadas",
     "pastryButton": "Pasteleria / Bolleria",
     "contactButton": "Contacto",
+    "locationButton": "Ubicacion",
 
     "bakeryProducts": "Productos de Panaderia",
     "pieProducts": "Tipos de Empanada",
@@ -20,6 +21,9 @@
     "titleIngredients": "Ingredientes",
     "titleDescription": "Descripcion",
     "titleImage": "Imagen",
+    "titleAddress": "Dirección",
+    "titleFooterHeader":"TODOS NUESTROS PRODUCTOS",
+    "titleFooterMessage": "CON LA MEJOR MATERIA PRIMA Y UNA PROPUESTA SORPRENDENTE",
 
     "titleHeader": "Cabecera y barra de navegacion",
     "titleFooter": "Pie de página",
@@ -28,14 +32,19 @@
     "titleBodyPasBollo": "Esta es la página de pastelería y bollería",
     "titleBodyPan": "Esta es la página de panadería",
     "titleBodyEmpanada": "Esta es la página de empanadas",
-    "titleBodyContacto": "Contacta con nosotros, estamos a tu disposición.",
+    "titleBodyContacto": "Contacta con nosotros, estamos a tu disposición",
+    "titleBodyUbicacion": "Ven a vernos, estaremos encantados de atenderte",
+
+    "titleError404": "ERROR 404 Pagina no Encontrada",
 
     "formName": "Nombre",
     "formEmail": "Correo Electrónico",
+    "formSubject":"Asunto", 
     "formMsg": "Mensaje",
     "formSubmit": "Enviar",
     "formNamePlaceholder": "Ingrese su nombre",
     "formEmailPlaceholder": "Ingrese su correo electrónico",
+    "formSubjectPlaceholder": "Ingrese su asunto",
     "formMsgPlaceholder": "Escriba su mensaje aquí",
 
     "email": "Email",

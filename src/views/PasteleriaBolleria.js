@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const pastryProducts = [
   {
@@ -64,36 +65,35 @@ const PasteleriaBolleria = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="past_boll-background">
       <h1>{t("translation.pastryProducts")}</h1>
-      <table>
-        {/* <caption>{t("translation.pastryProducts")}</caption> */}
-        <thead>
-          <tr>
-            <th scope="col">{t("translation.titleProduct")}</th>
-            <th scope="col">{t("translation.titleIngredients")}</th>
-            <th scope="col">{t("translation.titleDescription")}</th>
-            <th scope="col">{t("translation.titleImage")}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pastryProducts.map((product) => (
-            <tr key={product.id} className="table-row">
-              <th scope="row">{t(`productNamesBolleria.${product.name}`)}</th>{" "}
-              <td>{t(`productIngredientsBolleria.${product.ingredients}`)}</td>{" "}
-              <td>{t(`productDescriptionsBolleria.${product.description}`)}</td>{" "}
-              <td>
-                <img
-                  src={product.imageUrl}
-                  alt={t(`productAltNamesBolleria.${product.name}`)}
-                  title={t(`productNamesBolleria.${product.name}`)} // Agregar title para mostrar la ayuda
-                  style={{ width: "100px" }}
-                />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="row">
+        {pastryProducts.map((product) => (
+          <div className="custom-col mb-4" key={product.id}>
+            <div className="card card-zoom-effect">
+              <img
+                src={product.imageUrl}
+                className="card-img-top"
+                alt={t(`productAltNamesBolleria.${product.name}`)}
+              />
+              <div className="card-body">
+                <h5 className="card-title">
+                  {t(`productNamesBolleria.${product.name}`)}
+                </h5>
+                <p className="card-text">
+                  {t(`productDescriptionsBolleria.${product.description}`)}
+                </p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                  <strong>{t("translation.titleIngredients")}:</strong>
+                    {t(`productIngredientsBolleria.${product.ingredients}`)}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

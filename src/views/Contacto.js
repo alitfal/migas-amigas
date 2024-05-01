@@ -1,96 +1,87 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Contacto = () => {
   const { t } = useTranslation();
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const messageRef = useRef(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  // Función para manejar el envío del formulario de contacto
   const handleSubmit = (e) => {
     e.preventDefault();
-    const name = nameRef.current.value;
-    const email = emailRef.current.value;
-    const message = messageRef.current.value;
-    // Aquí puedes añadir la lógica para enviar el formulario
-    console.log("Nombre:", name);
-    console.log("Correo electrónico:", email);
-    console.log("Mensaje:", message);
+    alert("Mensaje enviado correctamente");
+    // Aquí añadirías la lógica para enviar los datos al servidor...
+    setFormData({ name: "", email: "", subject: "", message: "" }); // Limpia los campos
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   return (
-    <div>
+    <div className="contacto-background">
       <h1>{t("translation.titleBodyContacto")}</h1>
-      <table className="contact-table">
-        <tbody>
-          <tr>
-            <td>
-              <div className="form-container">
-                {/* Formulario de contacto */}
-                <form onSubmit={handleSubmit}>
-                  <div>
-                    <label htmlFor="name">{t("translation.formName")}</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      placeholder={t("translation.formNamePlaceholder")}
-                      ref={nameRef}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email">{t("translation.formEmail")}</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      placeholder={t("translation.formEmailPlaceholder")}
-                      ref={emailRef}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message">{t("translation.formMsg")}</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      placeholder={t("translation.formMsgPlaceholder")}
-                      ref={messageRef}
-                    ></textarea>
-                  </div>
-                  <button type="submit" className="contact-submit-button">{t("translation.formSubmit")}</button>
-                </form>
-              </div>
-
-              <address>
-                <p>C/ Palmas Verdes, 42</p>
-                <p>Islas del Sueño, CP 12345</p>
-                <p>Ver Mapa</p>
-                <p>
-                  <strong>{t("translation.email")}:</strong>{" "}
-                  info@migasamigas.com
-                </p>
-                <p>
-                  <strong>{t("translation.phone")}:</strong> +12 345 6789
-                </p>
-                <p>
-                  <strong>{t("translation.mobile")}:</strong> +98 765 4532
-                </p>
-                <p>
-                  <strong>{t("translation.hours")}:</strong> Lunes – Viernes:
-                  8:00 – 18:00
-                </p>
-              </address>
-            </td>
-            <td className="croquis">
-              <img src="/images/localizacion.png" alt="Croquis" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="contact-content d-flex justify-content-around">
+        <div className="form-container">
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">{t("translation.formName")}</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                placeholder={t("translation.formNamePlaceholder")}
+              />
+            </div>
+            <div>
+              <label htmlFor="email">{t("translation.formEmail")}</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder={t("translation.formEmailPlaceholder")}
+              />
+            </div>
+            <div>
+              <label htmlFor="subject">{t("translation.formSubject")}</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                required
+                placeholder={t("translation.formSubjectPlaceholder")}
+              />
+            </div>
+            <div>
+              <label htmlFor="message">{t("translation.formMsg")}</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                placeholder={t("translation.formMsgPlaceholder")}
+                style={{ height: "200px" }} // Ajustar la altura del textarea
+              />
+            </div>
+            <button type="submit" className="contact-submit-button">
+              {t("translation.formSubmit")}
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

@@ -9,6 +9,7 @@
     "pieButton": "Empadas",
     "pastryButton": "Pastelaria / Padaria",
     "contactButton": "Contato",
+    "locationButton": "Localização",
 
     "bakeryProducts": "Produtos de Padaria",
     "pieProducts": "Tipos de Empada",
@@ -16,9 +17,12 @@
 
     "titlePrincipal": "Paixão pelo tradicional",
     "titleProduct": "Produto",
-    "titleIngredients": "Ingredientes",
+    "titleIngredients": "Composição",
     "titleDescription": "Descrição",
     "titleImage": "Imagem",
+    "titleAddress": "Endereço",
+    "titleFooterHeader":"TODOS OS NOSSOS PRODUTOS",
+    "titleFooterMessage": "COM A MELHOR MATÉRIA-PRIMA E UMA PROPOSTA SURPREENDENTE",
 
     "titleHeader": "Cabeçalho e barra de navegação",
     "titleFooter": "Rodapé",
@@ -27,14 +31,20 @@
     "titleBodyPasBollo": "Esta é a página de pastelaria e padaria",
     "titleBodyPan": "Esta é a página de padaria",
     "titleBodyEmpanada": "Esta é a página de empadas",
-    "titleBodyContacto": "Entre em contato conosco, estamos à sua disposição.",
+    "titleBodyContacto": "Entre em contato conosco, estamos à sua disposição",
+    "titleBodyUbicacion": "Venha visitar-nos, teremos todo o gosto em ajudá-lo",
+
+
+    "titleError404": "ERRO 404 Página não encontrada",
 
     "formName": "Nome",
     "formEmail": "E-mail",
+    "formSubject":"Assunto", 
     "formMsg": "Mensagem",
     "formSubmit": "Enviar",
     "formNamePlaceholder": "Digite seu nome",
     "formEmailPlaceholder": "Digite seu e-mail",
+    "formSubjectPlaceholder": "Digite seu assunto",
     "formMsgPlaceholder": "Digite sua mensagem aqui",
 
     "email": "E-mail",

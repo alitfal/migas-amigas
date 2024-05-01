@@ -1,6 +1,15 @@
+/* Eliminar margen y relleno por defecto del navegador */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8c006;
+}
 /* Estilos generales */
 .App {
+  flex-direction: column;
   text-align: center;
+  min-height: 100vh; /* Usa la altura de la ventana gráfica para asegurarte de que el .App llene la pantalla */
 }
 
 .App-logo {
@@ -22,6 +31,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 0; /* Eliminar margen superior del navbar si es necesario */
 }
 
 .App-link {
@@ -37,15 +47,18 @@
     transform: rotate(360deg);
   }
 }
-
-/* Estilos para el header */
 .header {
-  color: #bf360c;
-  /* Cambia el color del texto del header */
+  padding: 0; /* Eliminar relleno del header */
+  margin-bottom: -20px; /* Ajustar o eliminar el espacio debajo del header si es necesario */
+  border-bottom: none; /* Eliminar borde inferior si existe */
+}
+/* Estilos para el header */
+.header nav {
+  background-color: #282c34;
+  color: #f8c006;
   justify-content: space-between;
   align-items: center;
   display: flex;
-  /* justify-content: center; */
 }
 
 .header ul {
@@ -57,7 +70,7 @@
 }
 
 .header nav a {
-  color: #bf360c;
+  color: #f8c006;
   text-decoration: none;
   margin-right: 10px;
   margin-left: 10px;
@@ -67,56 +80,166 @@
   color: lightblue;
 }
 
-/* Estilos para las tablas */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th,
-td {
-  padding: 8px;
-  text-align: left;
-  
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
-/* Aplica los estilos solo a las tablas que no tienen la clase footer-table */
-table:not(.footer-table) td {
-  border-bottom: 1px solid #ddd;
-  /* Mantiene el borde inferior en las celdas de las otras tablas */
-}
-
-/* Estilos para las imágenes */
-img {
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}#00ff00
 
 .footer-table {
   border-collapse: collapse;
   /* Elimina el borde de la tabla del footer */
-  
 }
 
 .principal-background {
   background-image: url("../public/images/pan_redondo_2.jpg");
-  background-size: cover;
+  background-color: #f8c006;
+  background-size: 100% 80%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 20px;
-  height: 600px;
 }
 
-.principal-background p {
+.landing-text {
+  color: rgb(0, 0, 0);
+  left: 0; /* Alineado a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de su contenedor */
+  padding: 10px 0;
+}
+.landing-text p {
+  left: 0; /* Alineado a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de su contenedor */
+  color: #000;
+  padding: 10px 0;
   width: 400px;
   height: 200px;
 }
+
+.our-products {
+  color: red;
+  position: absolute;
+  bottom: 250px;
+  left: 0; /* Alineado a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de su contenedor */
+  padding: 10px 0;
+  text-align: center; /* Centra el texto */
+}
+.our-products p {
+  left: 0; /* Alineado a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de su contenedor */
+  text-align: center; /* Centra el texto */
+  color: #000;
+  padding: 10px 0;
+}
+
+
+/*ESTILOS PARA PANADERIA*/
+.panaderia-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Espacio interno para evitar que las tarjetas toquen los bordes del contenedor */
+  background-color: #f8c006; /* Color de fondo amarillo */
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en líneas múltiples */
+  justify-content: space-evenly; /* Distribuye el espacio de manera uniforme entre las tarjetas y los bordes del contenedor */
+  margin-right: auto; /* Centra automáticamente el margen derecho */
+  margin-left: auto; /* Centra automáticamente el margen izquierdo */
+  width: 90%; /* Puedes ajustar el ancho según tus necesidades */
+  
+}
+
+/* Personaliza el ancho de las columnas para ajustar 5 por línea */
+.custom-col {
+  flex: 0 0 20%; /* Cada columna toma exactamente el 20% del ancho del contenedor */
+  max-width: 20%; /* Máximo ancho del 20% */
+  padding: 15px; /* Añade algo de espacio alrededor de las tarjetas */
+}
+.card {
+  width: 300px; /* Establece un ancho fijo para todas las tarjetas */
+  height: 400px; /* Establece un alto fijo para todas las tarjetas */
+  margin: 10px 0; /* Espaciado vertical para evitar que las tarjetas se toquen */
+  margin-bottom: 20px; /* Espacio adicional debajo de cada tarjeta */
+  background-color: #f8c006; /* Color de fondo amarillo para cada tarjeta */
+  border: none; /* Elimina el borde */
+  display: flex; /* Usa flexbox para manejar el contenido interno */
+  flex-direction: column; /* Orienta los elementos internos verticalmente */
+  justify-content: space-between; /* Distribuye el espacio uniformemente */
+}
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen cubra todo el ancho de la tarjeta */
+  height: 180px; /* Altura fija para la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+}
+
+.card-body {
+  padding: 10px; /* Espacio interior para el texto y otros elementos */
+}
+
+.card-zoom-effect {
+  transition: transform 0.2s; /* Animación */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+.card-zoom-effect:hover {
+  transform: scale(
+    1.05
+  ); /* Escala la tarjeta al 105% cuando se pasa el mouse */
+}
+
+.empanadas-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Espacio interno para evitar que las tarjetas toquen los bordes del contenedor */
+  background-color: #f8c006; /* Color de fondo amarillo */
+  width: 100%;
+}
+
+.past_boll-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Espacio interno para evitar que las tarjetas toquen los bordes del contenedor */
+  background-color: #f8c006; /* Color de fondo amarillo */
+  width: 100%;
+}
+
+.contacto-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Espacio interno para evitar que las tarjetas toquen los bordes del contenedor */
+  background-color: #f8c006; /* Color de fondo amarillo */
+  width: 100%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  gap: 20px; /* Espacio entre los elementos */
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+.form-container, .info-container {
+  flex: 1; /* Cada contenedor ocupa la mitad del espacio disponible */
+  margin-right: 90px; /* Espacio entre los módulos */
+}
+#message {
+  height: 280px; /* Ajusta la altura del textarea a 400px */
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column; /* Apila los contenedores verticalmente en pantallas pequeñas */
+  }
+}
+
 
 /* Estilos específicos para el footer */
 .footer {
@@ -145,48 +268,13 @@ img {
 }
 
 .footer a.email-link {
-  color:#00ff00;
+  color: #00ff00;
   /* Cambia el color del enlace del email a verde */
 }
 .footer-content span {
   margin: 0 10px;
 }
 
-
-/* Estilos para la información de contacto */
-.contact-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.contact-info address {
-  flex: 1;
-}
-
-/* Estilos para la tabla de contacto */
-.contact-table {
-  width: 100%;
-  /* Ajusta el ancho de la tabla al 100% del contenedor */
-  border-collapse: collapse;
-  /* Combina los bordes de las celdas de la tabla */
-}
-
-.contact-table td {
-  padding: 10px;
-  /* Agrega un relleno a las celdas de la tabla */
-}
-
-/* Estilos específicos para la imagen del croquis */
-.croquis img {
-  width: 900px;
-  /* Establece el ancho de la imagen del croquis */
-  height: 500px;
-  /* Establece la altura de la imagen del croquis */
-}
-.table-row:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Cambia el valor al color que desees */
-}
 /* Estilos para el formulario de contacto */
 .form-container {
   width: 100%;
@@ -221,51 +309,18 @@ img {
 }
 
 .form-container button:hover {
-  background-color: #4caf50;
+  background-color: #c4ee2e;
 }
 
 /* Estilos para el resto de la página */
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.address-info {
-  flex: 1;
-  padding-right: 20px;
-}
-
-.address-info p {
-  margin-bottom: 10px;
-}
-
-.map-info {
-  flex: 1;
-}
-
-.map-info img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Media query para ajustar estilos en dispositivos pequeños */
-@media (max-width: 768px) {
-  .contact-info {
-    flex-direction: column;
-  }
-
-  .address-info,
-  .map-info {
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 0; /* Eliminar margen superior del navbar si es necesario */
+
 }
 
 .nav-links {
@@ -273,16 +328,17 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+
 }
 
 .nav-links li {
-  margin-right: 20px;
+  margin-right: 10px; 
+  align-items: center;
 }
 
 .nav-links li a.active {
-  color:#c70000; /* Cambia el color del texto cuando el enlace esté activo */
+  color: #c70000; /* Cambia el color del texto cuando el enlace esté activo */
 }
-
 
 .language-select-container {
   margin-right: 10px;

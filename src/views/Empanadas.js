@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const pieProducts = [
   {
@@ -37,36 +38,35 @@ const Empanadas = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="empanadas-background">
       <h1>{t("translation.pieProducts")}</h1>
-      <table>
-        {/* <caption>{t("translation.pieProducts")}</caption> */}
-        <thead>
-          <tr>
-            <th scope="col">{t("translation.titleProduct")}</th>
-            <th scope="col">{t("translation.titleIngredients")}</th>
-            <th scope="col">{t("translation.titleDescription")}</th>
-            <th scope="col">{t("translation.titleImage")}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pieProducts.map((product) => (
-            <tr key={product.id} className="table-row">
-              <th scope="row">{t(`productNamesEmpanada.${product.name}`)}</th>{" "}
-              <td>{t(`productIngredientsEmpanada.${product.ingredients}`)}</td>{" "}
-              <td>{t(`productDescriptionsEmpanada.${product.description}`)}</td>{" "}
-              <td>
-                <img
-                  src={product.imageUrl}
-                  alt={t(`productAltNamesEmpanada.${product.name}`)}
-                  title={t(`productNamesEmpanada.${product.name}`)} // Agregar title para mostrar la ayuda
-                  style={{ width: "100px" }}
-                />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="row">
+        {pieProducts.map((product) => (
+          <div className="custom-col mb-4" key={product.id}>
+            <div className="card card-zoom-effect">
+              <img
+                src={product.imageUrl}
+                className="card-img-top"
+                alt={t(`productAltNamesEmpanada.${product.name}`)}
+              />
+              <div className="card-body">
+                <h5 className="card-title">
+                  {t(`productNamesEmpanada.${product.name}`)}
+                </h5>
+                <p className="card-text">
+                  {t(`productDescriptionsEmpanada.${product.description}`)}
+                </p>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                  <strong>{t("translation.titleIngredients")}:</strong>
+                    {t(`productIngredientsEmpanada.${product.ingredients}`)}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

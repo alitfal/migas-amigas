@@ -15,13 +15,16 @@ const Principal = () => {
 
   return (
     <div className="principal-background">
-      <header>
-        {showWelcomeMessage && <h2>{t("translation.entryMessage")}</h2>}
+      <p></p>
+      <section className="landing-text">
         <h1>{t("translation.titlePrincipal")}</h1>
-      </header>
-      <main>
+        {showWelcomeMessage && <h2>{t("translation.entryMessage")}</h2>}
         <p>{t("translation.bodyMessage")}</p>
-      </main>
+      </section>
+      <section className="our-products">
+        <h2>{t("translation.titleFooterHeader")}</h2>
+        <p>{t("translation.titleFooterMessage")}</p>
+      </section>
     </div>
   );
 };
