@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { LANGUAGES } from "./../../constants/Langs.ts";
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../../images/header/Migas_Amigas_128x128_removebg.png";
+import ModificadoAudio from "../../sounds/Modificado.mp3";
 
 const HeaderNav = () => {
   const { i18n, t } = useTranslation();
@@ -41,6 +42,12 @@ const HeaderNav = () => {
       <nav className="navbar">
         <div className="logo">
           <img src={Logo} alt="Logo" />
+          <div className="audio-container">
+          <audio controls>
+            <source src={ModificadoAudio} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
         </div>
         <ul className="nav-links">
           <li>
@@ -81,6 +88,7 @@ const HeaderNav = () => {
             ))}
           </select>
         </div>
+
       </nav>
     </header>
   );
