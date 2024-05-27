@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom"; // Importa NavLink de react-router-dom
@@ -13,7 +12,7 @@ const Footer = () => {
         <span>
           Email: <a href="mailto:info@islasdelsueno.com" className="email-link" aria-label="Enviar correo electrónico a info@islasdelsueno.com">info@islasdelsueno.com</a>
         </span>
-        <NavLink to="/ubicacion">{t("translation.locationButton")}</NavLink>
+        <NavLink to="/ubicacion" className="footer-link">{t("translation.locationButton")}</NavLink>
       </div>
     </div>
   );

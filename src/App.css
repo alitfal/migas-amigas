@@ -80,12 +80,6 @@ body {
   color: lightblue;
 }
 
-
-.footer-table {
-  border-collapse: collapse;
-  /* Elimina el borde de la tabla del footer */
-}
-
 .principal-background {
   background-image: url("../public/images/pan_redondo_2.jpg");
   background-color: #f8c006;
@@ -259,6 +253,7 @@ body {
   /* Centra horizontalmente los elementos del footer */
   align-items: center;
   /* Centra verticalmente los elementos del footer */
+    padding: 20px 0;
   position: fixed;
   /* Posicionamiento fijo */
   bottom: 0;
@@ -271,8 +266,36 @@ body {
   color: #00ff00;
   /* Cambia el color del enlace del email a verde */
 }
-.footer-content span {
-  margin: 0 10px;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+  width: 90%;
+  max-width: 1200px;
+  text-align: center; /* Centrar el texto en dispositivos pequeños */
+}
+
+.footer-content span,
+.footer-content a {
+  margin: 10px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Añade transiciones para color y transformación */
+}
+
+.footer-content a:hover,
+.footer-content span:hover {
+  color: #f8c006; /* Cambia el color al pasar el mouse */
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.footer-link {
+  color: white; /* Asegura que los enlaces en el footer tengan color blanco */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #f8c006; /* Cambia el color del enlace al pasar el mouse */
+  transform: scale(1.1); /* Aumenta el tamaño del enlace al pasar el mouse */
 }
 
 /* Estilos para el formulario de contacto */
